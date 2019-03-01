@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/textLayout" android:background="@drawable/custom_list_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/content_weight">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_weight="3.0">
+            <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Activity.BoldUppercaseTitle" />
+            <TextView android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" style="@style/Activity.BoldUppercaseTitle.DescText" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/faultImageLayout" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="30.0dip">
+            <ImageView android:id="@id/imageButton" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_icon_error" android:scaleType="centerInside" android:tooltipText="@string/fault_image_title" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+</LinearLayout>

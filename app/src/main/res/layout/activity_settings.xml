@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/samsungAccount" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/content_weight">
+            <TextView android:ellipsize="end" android:layout_marginTop="18.0dip" android:text="@string/samsung_account" style="@style/Activity.settingTitle" />
+            <TextView android:id="@id/accountId" android:text="samsung account" android:singleLine="false" style="@style/Activity.settingSubText" />
+            <View android:background="@color/LightTheme.divider" android:layout_width="fill_parent" android:layout_height="@dimen/thin_line_height" android:layout_marginTop="18.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/about" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/content_weight">
+            <TextView android:ellipsize="end" android:layout_marginTop="18.0dip" android:text="@string/about_linux_on_dex" style="@style/Activity.settingTitle" />
+            <TextView android:text="@string/about_linux_on_dex_description" android:singleLine="false" style="@style/Activity.settingSubText" />
+            <View android:background="@color/LightTheme.divider" android:layout_width="fill_parent" android:layout_height="@dimen/thin_line_height" android:layout_marginTop="18.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+    </LinearLayout>
+</LinearLayout>

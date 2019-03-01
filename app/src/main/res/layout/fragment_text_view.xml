@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/itemTitle" android:layout_marginTop="15.0dip" style="@style/Activity.Text.ItemTitle" />
+    <TextView android:textSize="16.0sp" android:id="@id/itemText" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/itemTitle" style="@style/Activity.Text.Item" />
+</RelativeLayout>

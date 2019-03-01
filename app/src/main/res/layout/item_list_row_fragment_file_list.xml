@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_file" android:scaleType="fitXY" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.05" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.66">
+                <View android:id="@id/above_title_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:id="@id/name_text" style="@style/Activity.List.Item" />
+                <View android:id="@id/below_title_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:id="@id/date_text" style="@style/Activity.List.Item.Description" />
+                <TextView android:id="@id/path_text" android:visibility="gone" style="@style/Activity.List.Item.Description" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.05" />
+            <TextView android:layout_gravity="bottom" android:id="@id/size_text" style="@style/Activity.List.Item.Description" />
+        </LinearLayout>
+        <View android:id="@id/below_date_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:id="@id/lineEndOfList" android:background="@color/LightTheme.divider" android:layout_width="fill_parent" android:layout_height="@dimen/line_height" android:alpha="1.0" />
+    </LinearLayout>
+</LinearLayout>

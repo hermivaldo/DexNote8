@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/detailsLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+            <include android:id="@id/details" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/content_weight" layout="@layout/layout_detail_bottom" />
+            <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:gravity="center" android:id="@id/emptyImageLayout" android:visibility="invisible" android:layout_height="fill_parent" android:text="@string/no_lod_container_detail_desc" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:textAlignment="center" style="@style/Activity.Text.NoVM" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/cardview" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/LightTheme.transparent" app:cardElevation="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="@dimen/cardView_title_marginTop">
+            <LinearLayout android:orientation="horizontal" android:id="@id/textLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:layout_marginHorizontal="@dimen/cardView_title_marginStart">
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@id/fileImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/cardView_title_marginStart">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_icon_file" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/textLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Activity.BoldUppercaseTitle" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:id="@id/imagePath" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Activity.Text.imagePath" />
+                        <TextView android:id="@id/notifyDesc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/notifyDescription" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="end|center" android:id="@id/unmountImage" android:visibility="gone" android:clickable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="30.0dip" android:tooltipText="@string/unmount_image">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/custom_circle_subtract_red_icon" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textStyle="bold" android:textColor="@color/LightTheme.white" android:id="@id/button" android:background="@drawable/custom_about_update_button_bg" android:visibility="visible" android:layout_width="200.0dip" android:layout_marginTop="40.0dip" android:text="@string/run_image" android:layout_below="@id/textLayout" android:layout_centerHorizontal="true" style="@style/Activity.Button.TextButton.BorderedTextButton" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/adbWiFiLayout" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/button" android:layout_centerHorizontal="true">
+                <TextView android:textSize="12.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/adb_wifi" android:layout_weight="1.0" style="@style/Activity.Text.ItemTitle.Description" />
+                <Switch android:textSize="12.0sp" android:textColor="@color/LightTheme.description_text" android:id="@id/adbWiFiSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="sec-roboto-light" android:layout_marginStart="5.0dip" style="@style/Activity.Switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/progressBarLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/download_noti_progress_marginTop" android:layout_below="@id/textLayout" android:layout_marginHorizontal="30.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/progressTextLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/LightTheme.white" android:layout_gravity="start" android:id="@id/progressSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/notifyDescription" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/LightTheme.white" android:gravity="end" android:layout_gravity="end" android:id="@id/progressPercentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/notifyDescription" />
+                </LinearLayout>
+                <ProgressBar android:gravity="center_horizontal" android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="5.0dip" android:max="100" android:layout_below="@id/progressBarLayout" android:scaleY="3.0" android:min="0" style="@style/Dialog.ProgressBar.Download" />
+                <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textStyle="bold" android:textColor="@color/LightTheme.white" android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:id="@id/positiveButton" android:clickable="true" android:text="@string/popup_cancel" android:layout_marginEnd="50.0dip" style="@style/Activity.Button.TextButton.BorderlessTextButton.normalStyle" />
+                    <TextView android:textStyle="bold" android:textColor="@color/LightTheme.white" android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:id="@id/cancelButton" android:clickable="true" android:text="@string/popup_cancel" style="@style/Activity.Button.TextButton.BorderlessTextButton.normalStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

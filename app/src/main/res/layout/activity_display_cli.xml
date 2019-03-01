@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottomBar">
+        <com.samsung.android.lxd.processor.network.display.base.BaseCanvas android:id="@id/baseCanvas" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbarDefaultDelayBeforeFade="500" />
+        <ImageView android:id="@id/enterSelector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_selector_enter" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/pointSelector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_selector_point" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/leaveSelector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_text_selector_leave" android:adjustViewBounds="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottomBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/virtualKey" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_icon_search" android:id="@id/actionSearch" android:title="@string/tooltip_search" android:showAsAction="always|collapseActionView" android:actionLayout="@layout/layout_search_menu" />
+    <item android:icon="@drawable/ic_icon_item_view_list" android:id="@id/actionView" android:title="@string/tooltip_view_list" android:showAsAction="always" />
+</menu>

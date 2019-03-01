@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/actionCopy" android:title="@string/terminal_mode_text_copy" android:showAsAction="ifRoom" />
+    <item android:id="@id/actionPaste" android:title="@string/terminal_mode_text_paste" android:showAsAction="ifRoom" />
+</menu>

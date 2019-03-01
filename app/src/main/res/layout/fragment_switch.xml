@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/itemDescriptionText" android:layout_marginTop="15.0dip" style="@style/Activity.Text.ItemTitle.Description" />
+    <TextView android:id="@id/itemStateText" android:layout_marginTop="22.0dip" android:layout_marginBottom="108.0dip" android:layout_below="@id/itemDescriptionText" style="@style/Activity.Text.ItemTitle.EditOnly" />
+    <Switch android:id="@id/itemSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:layout_alignBaseline="@id/itemStateText" style="@style/Activity.Switch" />
+</RelativeLayout>

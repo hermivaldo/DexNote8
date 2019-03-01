@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textStyle="bold" android:textColor="@color/LightTheme.white" android:id="@id/button" android:background="@drawable/custom_about_update_button_bg" android:layout_width="200.0dip" android:layout_centerHorizontal="true" style="@style/Activity.Button.TextButton.BorderedTextButton" />
+</RelativeLayout>

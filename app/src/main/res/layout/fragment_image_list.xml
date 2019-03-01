@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/imageListLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/descText" android:layout_marginTop="@dimen/vm_list_marginTop" android:text="@string/lod_containers" style="@style/Activity.Text.BoldCenteredTitle" />
+        <ListView android:id="@android:id/list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:divider="@color/LightTheme.divider" android:dividerHeight="1.0px" android:layout_below="@id/descText" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/addImage_button_marginBottom" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/addImage_button_marginEnd" android:layout_alignParentEnd="true">
+        <ImageButton android:id="@id/myFAB" android:background="@drawable/custom_floating_button" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_icon_add" android:contentDescription="@string/tooltip_create_a_lod_container" android:tooltipText="@string/tooltip_create_a_lod_container" style="@style/Activity.Button.ImageButton" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/emptyListLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/descriptionImage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_no_lod_container" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/descriptionText" android:layout_marginTop="6.0dip" android:text="@string/no_lod_container" android:layout_below="@id/descriptionImage" style="@style/Activity.Text.NoVM" />
+        <TextView android:layout_marginTop="16.0dip" android:text="@string/no_lod_container_desc" android:layout_below="@id/descriptionText" android:layout_centerHorizontal="true" style="@style/Activity.Text.NoVM.Description" />
+    </RelativeLayout>
+</RelativeLayout>

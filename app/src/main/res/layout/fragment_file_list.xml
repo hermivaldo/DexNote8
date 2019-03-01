@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+        <RelativeLayout android:id="@id/contentLayout" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/content_weight">
+            <LinearLayout android:orientation="vertical" android:id="@id/FileListLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <GridView android:scrollbarStyle="outsideInset" android:gravity="center_horizontal" android:id="@id/gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="1.0px" android:stretchMode="spacingWidth" android:numColumns="auto_fit" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/horizontalListColumn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="horizontal" android:layout_weight="@dimen/file_list_weight_name" style="@style/Activity.List.Item.Title">
+                                <TextView android:text="Name" style="@style/Activity.List.Item.TitleText" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_weight="@dimen/file_list_weight_path" style="@style/Activity.List.Item.Title">
+                                <TextView android:text="From" style="@style/Activity.List.Item.TitleText" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_weight="@dimen/file_list_weight_date" style="@style/Activity.List.Item.Title">
+                                <TextView android:text="Date" style="@style/Activity.List.Item.TitleText" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_weight="@dimen/file_list_weight_type" style="@style/Activity.List.Item.Title">
+                                <TextView android:text="Type" style="@style/Activity.List.Item.TitleText" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_weight="@dimen/file_list_weight_size" style="@style/Activity.List.Item.Title">
+                                <TextView android:text="Size" style="@style/Activity.List.Item.TitleText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/LightTheme.transparent" android:layout_below="@id/horizontalListColumn" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/EmptyListLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/descriptionImage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_no_lod_container" android:scaleType="centerInside" />
+                <TextView android:id="@id/titleText" android:layout_marginTop="6.0dip" android:text="@string/no_files_found" style="@style/Activity.List" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/gotoServerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <fragment android:id="@id/serverLinkButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" class="com.samsung.android.lxd.fragment.TextButtonFragment" />
+                    <TextView android:id="@id/descriptionText" android:layout_width="230.0dip" android:layout_marginTop="10.0dip" android:text="@string/visit_our_server" android:singleLine="false" style="@style/Activity.List.Description" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/NoSearchListLayout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="6.0">
+            <TextView android:layout_gravity="center_vertical" android:layout_height="fill_parent" android:text="@string/no_result_found_search" style="@style/Activity.List" />
+        </LinearLayout>
+        <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+    </LinearLayout>
+</LinearLayout>

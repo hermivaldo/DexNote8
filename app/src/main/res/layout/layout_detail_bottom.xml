@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" class="com.samsung.android.lxd.fragment.CardViewFragment" />
+        <RelativeLayout android:id="@id/baseLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/cardView">
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttonView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentEnd="true">
+                <LinearLayout android:id="@id/play_button" android:onClick="runTerminalMode" style="@style/Activity.Button.IconAndTextLayout">
+                    <ImageView android:src="@drawable/ic_icon_terminal" style="@style/Activity.Button.IconAndText" />
+                    <TextView android:text="@string/terminal_mode" style="@style/Activity.Button.IconAndText" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/delete_button" android:onClick="deleteImage" style="@style/Activity.Button.IconAndTextLayout">
+                    <ImageView android:src="@drawable/ic_icon_delete" style="@style/Activity.Button.IconAndText" />
+                    <TextView android:text="@string/delete_icon" style="@style/Activity.Button.IconAndText" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/edit_button" android:onClick="editImage" style="@style/Activity.Button.IconAndTextLayout">
+                    <ImageView android:src="@drawable/ic_icon_edit" style="@style/Activity.Button.IconAndText" />
+                    <TextView android:text="@string/edit_icon" style="@style/Activity.Button.IconAndText" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/imageInfo" android:layout_marginTop="20.0dip" android:text="@string/image_information_title" android:layout_below="@id/buttonView" style="@style/Activity.Text.BoldUppercaseTitle" />
+            <View android:id="@id/lineLeftOfImageInfo" android:background="@color/LightTheme.divider" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="30.0dip" android:layout_below="@id/buttonView" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/imageInfo" android:layout_alignParentEnd="true" />
+            <fragment android:id="@id/nameTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageInfo" class="com.samsung.android.lxd.fragment.TextViewFragment" />
+            <fragment android:id="@id/descTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nameTextView" class="com.samsung.android.lxd.fragment.TextViewFragment" />
+            <TextView android:id="@id/imageSizeTitle" android:layout_marginTop="30.0dip" android:text="@string/storage_space_title" android:layout_below="@id/descTextView" style="@style/Activity.Text.BoldUppercaseTitle" />
+            <View android:id="@id/lineLeftOfImageSizeTitle" android:background="@color/LightTheme.divider" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="40.0dip" android:layout_below="@id/descTextView" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/imageSizeTitle" android:layout_alignParentEnd="true" />
+            <fragment android:id="@id/imageSizeTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageSizeTitle" class="com.samsung.android.lxd.fragment.TextViewFragment" />
+            <TextView android:id="@id/shareFolderTitle" android:visibility="gone" android:layout_marginTop="30.0dip" android:text="@string/not_numbered_share_folder_title" android:layout_below="@id/imageSizeTextView" style="@style/Activity.Text.BoldUppercaseTitle" />
+            <View android:id="@id/lineLeftOfShareFolderTitle" android:background="@color/LightTheme.divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="40.0dip" android:layout_below="@id/imageSizeTextView" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/shareFolderTitle" android:layout_alignParentEnd="true" />
+            <fragment android:id="@id/useShareFolder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/shareFolderTitle" class="com.samsung.android.lxd.fragment.TextViewFragment" />
+            <View android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_below="@id/useShareFolder" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/faultImageLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cardView">
+            <TextView android:layout_gravity="end" android:id="@id/imageDetail" android:clickable="true" android:layout_marginTop="23.0dip" style="@style/Activity.Button.TextButton.BorderlessTextButton" />
+            <TextView android:id="@id/descriptionText" android:layout_marginTop="@dimen/no_vm_marginTop" android:text="@string/fault_image_desc" style="@style/Activity.Text.NoVM.AlignStart" />
+            <fragment android:id="@id/browseButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" class="com.samsung.android.lxd.fragment.TextButtonFragment" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

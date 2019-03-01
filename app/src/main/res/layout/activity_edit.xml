@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activityLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/topBar" layout="@layout/fragment_commit_button_bar" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topBar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+            <RelativeLayout android:id="@id/mainLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@dimen/content_weight">
+                <TextView android:id="@id/imageFile" android:layout_marginTop="22.0dip" android:text="@string/image_file" style="@style/Activity.Text.BoldUppercaseTitle" />
+                <View android:id="@id/lineLeftOfImageFile" android:background="@color/LightTheme.divider" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="32.0dip" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/imageFile" android:layout_alignParentEnd="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/pathLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_below="@id/imageFile">
+                    <fragment android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.samsung.android.lxd.fragment.CardViewFragment" />
+                    <TextView android:layout_gravity="end" android:id="@id/imageDetail" android:clickable="true" android:layout_marginTop="23.0dip" style="@style/Activity.Button.TextButton.BorderlessTextButton" />
+                    <TextView android:id="@id/descriptionText" android:layout_marginTop="22.0dip" android:text="@string/edit_activity_description" style="@style/Activity.Text.ItemTitle.Description" />
+                </LinearLayout>
+                <TextView android:id="@id/imageInfo" android:layout_marginTop="29.0dip" android:text="@string/image_information_title" android:layout_below="@id/pathLayout" style="@style/Activity.Text.BoldUppercaseTitle" />
+                <View android:id="@id/lineLeftOfImageInfo" android:background="@color/LightTheme.divider" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="39.0dip" android:layout_below="@id/pathLayout" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/imageInfo" android:layout_alignParentEnd="true" />
+                <TextView android:id="@id/imageInfoDescription" android:layout_marginTop="16.0dip" android:text="@string/image_information_desc" android:layout_below="@id/imageInfo" style="@style/Activity.Text.ItemTitle.Description" />
+                <fragment android:id="@id/nameEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageInfoDescription" class="com.samsung.android.lxd.fragment.EditTextFragment" />
+                <fragment android:id="@id/descEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nameEditText" class="com.samsung.android.lxd.fragment.EditTextFragment" />
+                <TextView android:id="@id/imageSizeTitle" android:layout_marginTop="30.0dip" android:text="@string/storage_space_title" android:layout_below="@id/descEditText" style="@style/Activity.Text.BoldUppercaseTitle" />
+                <View android:id="@id/lineLeftOfImageSizeTitle" android:background="@color/LightTheme.divider" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="40.0dip" android:layout_below="@id/descEditText" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/imageSizeTitle" android:layout_alignParentEnd="true" />
+                <fragment android:id="@id/imageSizeSeekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageSizeTitle" class="com.samsung.android.lxd.fragment.ImageSizeSeekBarFragment" />
+                <TextView android:id="@id/shareFolderTitle" android:visibility="gone" android:layout_marginTop="30.0dip" android:text="@string/share_folder_title" android:layout_below="@id/imageSizeSeekbar" style="@style/Activity.Text.BoldUppercaseTitle" />
+                <View android:id="@id/lineLeftOfShareFolderTitle" android:background="@color/LightTheme.divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/line_height" android:layout_marginTop="38.0dip" android:layout_below="@id/imageSizeSeekbar" android:alpha="1.0" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/shareFolderTitle" android:layout_alignParentEnd="true" />
+                <fragment android:id="@id/shareFolderSwitch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/shareFolderTitle" class="com.samsung.android.lxd.fragment.SwitchFragment" />
+                <FrameLayout android:id="@id/emptyBottom" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/shareFolderSwitch" />
+            </RelativeLayout>
+            <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

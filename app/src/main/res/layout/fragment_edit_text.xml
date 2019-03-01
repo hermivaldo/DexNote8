@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/itemTitleTextView" android:visibility="gone" android:layout_marginTop="15.0dip" style="@style/Activity.Text.ItemTitle" />
+    <EditText android:id="@id/itemEditText" android:layout_below="@id/itemTitleTextView" android:inputType="text" android:layout_marginStart="-6.0dip" style="@style/Activity.EditText" />
+    <TextView android:id="@id/itemErrorTextView" android:visibility="gone" android:singleLine="false" android:layout_below="@id/itemEditText" style="@style/Activity.EditText.ErrorTextView" />
+</RelativeLayout>

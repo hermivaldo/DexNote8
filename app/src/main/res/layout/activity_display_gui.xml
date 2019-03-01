@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.samsung.android.lxd.processor.network.display.gl.GLCanvas android:id="@id/glCanvas" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

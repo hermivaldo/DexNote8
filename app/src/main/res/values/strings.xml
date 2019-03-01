@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TitleBeta">BETA</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="about_linux_on_dex">About Linux on DeX</string>
+    <string name="about_linux_on_dex_description">Check the current version and legal information</string>
+    <string name="adb_wifi">ADB Wi-Fi</string>
+    <string name="always">Always</string>
+    <string name="app_info">APP INFO</string>
+    <string name="app_name">Linux on DeX Beta</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="browse">BROWSE</string>
+    <string name="browse_image_body">Where would you like to browse your image from?</string>
+    <string name="browse_image_desc">Select a Linux image from the list below to start creating a LoD container.</string>
+    <string name="browse_image_title">Browse Image</string>
+    <string name="button_resume_download">RESUME DOWNLOAD</string>
+    <string name="cannot_create_container">Container cannot be created</string>
+    <string name="cannot_create_container_desc">Something went wrong an a LoD container cannot be created. Please try again.</string>
+    <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="close_app">CLOSE APP</string>
+    <string name="confirm_container_shutdown">Are you sure you want to shutdown your container?</string>
+    <string name="connect_on_low_memory">Connect on low memory?</string>
+    <string name="contact_us_menu">Contact us</string>
+    <string name="continue_setup">CONTINUE SET UP</string>
+    <string name="cores">Cores</string>
+    <string name="cpu_big">CPU_BIG</string>
+    <string name="cpu_big_desc">Controls maximum number of Big cores available to your Linux container</string>
+    <string name="cpu_little">CPU_LITTLE</string>
+    <string name="cpu_little_desc">Controls maximum number of Little cores available to your Linux container</string>
+    <string name="create_button">CREATE</string>
+    <string name="default_file_name">File name goes here</string>
+    <string name="default_path_name">File path goes here</string>
+    <string name="delete_icon">Delete</string>
+    <string name="delete_popup_title">Delete/Unmount image</string>
+    <string name="delete_unmount_message">"Deleting a Linux image completely removes it from your device.
+
+Unmounting a Linux image removes it from your LoD container list. You can still access this file."</string>
+    <string name="description">Description</string>
+    <string name="description_hint">My container</string>
+    <string name="detail_name">Name</string>
+    <string name="detail_toolbar_title">LoD CONTAINER DETAILS</string>
+    <string name="details">Details</string>
+    <string name="disclaimer"><u>Disclaimer</u></string>
+    <string name="dismiss">DISMISS</string>
+    <string name="download_fail_already_exist">The Linux image already exists.</string>
+    <string name="download_fail_insufficient_storage">"There's insufficient storage. Delete files you no longer need and try again."</string>
+    <string name="download_fail_title">"Download failed
+"</string>
+    <string name="download_from_server">DOWNLOAD FROM SERVER</string>
+    <string name="download_pause_desc">Please check your Wi-Fi settings to resume the download. Either your Wi-Fi connection is weak or your mobile data has reached its limit.</string>
+    <string name="download_pause_title">"Download paused
+"</string>
+    <string name="download_pending_title">"Download in queue
+Please wait
+
+"</string>
+    <string name="downloading_complete_desc">Tap the button to unzip your file. Once unzipped, open the Linux on DeX app again, browse for your image and create a container with it.</string>
+    <string name="downloading_complete_title">"Download complete
+"</string>
+    <string name="downloading_desc">You can still use Linux on DeX or any other application on your phone while your image is being downloaded.</string>
+    <string name="downloading_title">"Downloading
+"</string>
+    <string name="edit_activity_description">Click on the fields below to edit text.</string>
+    <string name="edit_description">All the fields below are editable. Simply click on one of the fields you want to adjust.</string>
+    <string name="edit_icon">Edit</string>
+    <string name="edit_toolbar_title">EDIT LoD CONTAINER</string>
+    <string name="error_report">Send error reports</string>
+    <string name="error_report_mail_content">"Please provide us with a detailed description of your request.
+
+ Please fill out the template as seen below.
+ Summary:
+ Description:
+ Attachments (Screenshot):
+ Environment (Device &amp; Peripheral information):
+ Reproducible (Yes/No/Sometimes):
+ Priority (1-Critical, 2-Major, 3-Minor, 4-feature request):
+
+ Thank you for providing feedback to better improve our services."</string>
+    <string name="error_report_mail_subject">Linux on DeX error report</string>
+    <string name="error_report_popup_body">Send error reports:</string>
+    <string name="error_report_popup_description">"Your system log will be sent to Samsung Electronics Co., Ltd for analysis. Your system log may include information such as the version of Android you currently using and the build information of your phone. The system log data will only be used to analyze the problem and improve the application. 
+
+"<b>Standard data rates apply. It is recommended that you connect to Wi-Fi when sending the log file to avoid charges.</b></string>
+    <string name="error_report_popup_title">Send Linux on DeX log data?</string>
+    <string name="exceeds_max_length_postfix">characters</string>
+    <string name="exceeds_max_length_prefix">Max.</string>
+    <string name="existing_internal_storage_lod_path">/Internal storage/%s</string>
+    <string name="existing_lod_name_close_app_button">CLOSE APP</string>
+    <string name="existing_lod_name_continue_button">USE EXCLUSIVELY</string>
+    <string name="existing_lod_name_message" formatted="false">"We've found an existing file or folder named %s in the Internal storage.
+
+%s path is used exclusively for Linux on DeX.
+
+Are you sure you want to continue using the file or folder?"</string>
+    <string name="existing_lod_name_title">Existing LoD Folder</string>
+    <string name="exit_creation_popup_msg">If you cancel, the selected Linux image will be unmounted and no changes will be saved.</string>
+    <string name="exit_creation_popup_title">Cancel LoD container</string>
+    <string name="fab_transformation_scrim_behavior">android.support.design.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">android.support.design.transformation.FabTransformationSheetBehavior</string>
+    <string name="faq">FAQ</string>
+    <string name="fault_image_desc">This Linux image has been moved, renamed or deleted. Try browsing for it to retrieve your work and information.</string>
+    <string name="fault_image_title">Linux image not found</string>
+    <string name="file_path_prefix">From:</string>
+    <string name="gb">GB</string>
+    <string name="hide_bottom_view_on_scroll_behavior">android.support.design.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="image_already_in_use_popup_message">"This Linux image is already in use by another LoD container.
+
+Please select another image."</string>
+    <string name="image_already_in_use_popup_title">File already in use</string>
+    <string name="image_download">Downloading a large image</string>
+    <string name="image_download_msg">You are able to download a large image. We recommend using Wi-Fi only and avoid mobile data usage charges and potential delays.</string>
+    <string name="image_file">IMAGE FILE</string>
+    <string name="image_file_type">IMG</string>
+    <string name="image_information_desc">"Give your image a name.
+Description field is optional."</string>
+    <string name="image_information_title">CONTAINER INFORMATION</string>
+    <string name="image_not_found_create_message">"This Linux image has been moved, renamed or deleted. A new LoD container could not be created.
+
+Browse for a valid image to create a LoD container."</string>
+    <string name="image_not_found_title">Image not found</string>
+    <string name="image_size">Image size</string>
+    <string name="image_size_desc">Controls the size Linux roots can grow to within your device storage.</string>
+    <string name="images_on_sd_card_popup_message">"The performance of your container will depend on your SD card.
+
+SD card is out of the secured path:
+"<b>/Internal storage/LoD</b>"
+
+We recommend moving your file to the secured path using My Files app and then create a LoD container."</string>
+    <string name="images_on_sd_card_popup_title">Image on SD card</string>
+    <string name="incorrect_image_body">"This Linux image is not in the right format.
+Please select another image."</string>
+    <string name="incorrect_image_title">Incorrect file format</string>
+    <string name="insufficient_storage_create_message">A LoD container could not be created. Delete files you no longer need and try again.</string>
+    <string name="insufficient_storage_edit_message">Your LoD container could not be edited. Delete files you no longer need and try again.</string>
+    <string name="insufficient_storage_title">Insufficient storage</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="internal_storage_capital">INTERNAL STORAGE</string>
+    <string name="internal_storage_lod">/Internal storage/LoD</string>
+    <string name="invalid_input">Invalid input value</string>
+    <string name="invalid_input_for_storage">Invalid value. Please select a value in between 1stGB and 2ndGB.</string>
+    <string name="just_this_time">Just this time</string>
+    <string name="last_modified">Last modified</string>
+    <string name="latest_version_info">BETA</string>
+    <string name="legal_notice">Legal Notice</string>
+    <string name="legal_notice_agree">I have read and agree to all of the above</string>
+    <string name="legal_notice_description">Placeholder for description.</string>
+    <string name="linux_image_update">Linux image update</string>
+    <string name="linux_image_update_desc">"A new Linux image is available.
+Visit www.linuxondex.com to get the step by step guide and update your current Linux image."</string>
+    <string name="linux_on_dex">Linux on DeX</string>
+    <string name="location_path">LOCATION PATH</string>
+    <string name="lod_container_running_title">LoD container running</string>
+    <string name="lod_container_shut_down_title">LoD container shutdown</string>
+    <string name="lod_containers">LoD CONTAINERS</string>
+    <string name="mb">MB</string>
+    <string name="memory_size">Memory size</string>
+    <string name="memory_size_desc">Controls maximum amount of memory used by your Linux container</string>
+    <string name="memory_waring_popup_body1">Linux on DeX may slow down.</string>
+    <string name="memory_waring_popup_body2">Linux on DeX may suddenly shutdown.</string>
+    <string name="memory_waring_popup_body3">Linux on DeX has stopped.</string>
+    <string name="memory_waring_popup_body_bottom">Please save your data and close other apps.</string>
+    <string name="memory_waring_popup_body_bottom3">Please close the application using the DeX task bar, then restart it again.</string>
+    <string name="memory_waring_popup_body_top">The memory available is</string>
+    <string name="memory_waring_popup_title1">Internal memory low</string>
+    <string name="memory_waring_popup_title2">Internal memory very low</string>
+    <string name="memory_waring_popup_title3">There is no more memory available</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="my_questions">My questions</string>
+    <string name="name">Name*</string>
+    <string name="name_empty">Your LoD container needs a name</string>
+    <string name="name_hint">Ubuntu 16</string>
+    <string name="new_version_info">A new version is available</string>
+    <string name="no">NO</string>
+    <string name="no_description">No description available</string>
+    <string name="no_files_found">No files found</string>
+    <string name="no_lod_container">No LoD containers</string>
+    <string name="no_lod_container_desc">Your containers will be shown here.</string>
+    <string name="no_lod_container_detail_desc">Your container details will be shown here.</string>
+    <string name="no_result_found_search">No results found</string>
+    <string name="non_secured_path">Non-secured path</string>
+    <string name="non_secured_path_content">"The image you are trying to use is out of the secured path:
+"<b>/Internal storage/LoD</b>"
+
+Please move your file to the secured path using My Files app and try again."</string>
+    <string name="non_specified">Non specified</string>
+    <string name="non_supported_device_body">Your device is not supported. Please visit www.linuxondex.com for more details.</string>
+    <string name="non_supported_device_title">Non-supported devices</string>
+    <string name="not_numbered_share_folder_title">SHARE FOLDER</string>
+    <string name="ok">OK</string>
+    <string name="oops_create_message">"Something went wrong and a LoD container could not be created.
+
+Please close Linux on DeX and try again."</string>
+    <string name="oops_edit_message">"Something went wrong and a LoD container could not be edited.
+
+Please close Linux on DeX and try again."</string>
+    <string name="oops_title">Timeout error</string>
+    <string name="open_source_licenses"><u>Open source licenses</u></string>
+    <string name="open_source_licenses_capital">OPEN SOURCE LICENCES</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path">Path</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="permission_popup_description">Unable to open %s. Tap SETTINGS, go to Application info > Permissions, then allow the following permissions and try again:</string>
+    <string name="popup_cancel">CANCEL</string>
+    <string name="popup_confirm">CONFIRM</string>
+    <string name="popup_continue">CONTINUE</string>
+    <string name="popup_delete">DELETE IMAGE</string>
+    <string name="popup_done">DONE</string>
+    <string name="popup_samsungAccount_title">Sign in to your Samsung account</string>
+    <string name="popup_save">SAVE</string>
+    <string name="popup_signIn">SIGN IN</string>
+    <string name="popup_title_continue">Continue?</string>
+    <string name="popup_try_again">TRY AGAIN</string>
+    <string name="popup_unmount">UNMOUNT IMAGE</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="processing">Processing...</string>
+    <string name="reach_maximum_search_length">Up to 50 characters allowed.</string>
+    <string name="rebase_image_body">This Linux image is not initialized. click OK will do rebase/install process</string>
+    <string name="rebase_image_title">This Linux image is not initialized</string>
+    <string name="rename_lod_name_message" formatted="false">"We've found an existing file or folder named %s in the Internal storage. Please go to My Files, rename it and restart Linux on DeX. 
+
+%s path is used exclusively for Linux on DeX."</string>
+    <string name="rename_lod_name_title">Rename file</string>
+    <string name="report_error">REPORT ERROR</string>
+    <string name="report_via_email">Report via email</string>
+    <string name="reset_body">Your Samsung account has been deleted. Sign back in to continue experiencing the Linux on DeX experience.</string>
+    <string name="reset_title">Reset Linux on DeX</string>
+    <string name="run">Run</string>
+    <string name="run_gui_msg_not_in_dex_mode">Linux on DeX is optimized for Samsung DeX. Open the app on a Samsung DeX screen and run your LoD container.</string>
+    <string name="run_image">RUN</string>
+    <string name="run_lod_container">LoD container</string>
+    <string name="running_container_error_message">"Cannot run this LoD container.
+Close the Linux on DeX app and try again."</string>
+    <string name="running_container_error_title">LoD container error</string>
+    <string name="samsung_account">Samsung account</string>
+    <string name="samsung_account_signIn_message">"Your device is currently signed out from Samsung account.
+Sign in to your Samsung account to enjoy the Linux on DeX experience."</string>
+    <string name="samsungaccount_agree">I have read and agree to all items and conditions above.</string>
+    <string name="samsungaccount_button">SIGN IN</string>
+    <string name="samsungaccount_description1">"PLEASE NOTE THAT THIS IS A BETA VERSION OF THE LINUX ON DEX WHICH IS STILL UNDERGOING FINAL TESTING BEFORE ITS OFFICIAL COMMERCIAL RELEASE. DUE TO TECHNICAL, LEGAL OR BUSINESS CONSIDERATIONS OF THIRD PARTY SERVICE PROVIDERS AND LICENSORS, OR FOR ANY OTHER REASON, LINUX ON DEX MAY END SERVICE AT ANY TIME WITHOUT PRIOR NOTIFICATION TO YOU.
+
+Please use only the authorized image provided directly through Linux on DeX. Other versions or unauthorized images may not operate properly.
+
+Linux on DeX currently supports customized Ubuntu image (Ubuntu 16.04 LTS version provided by Canonical) which only operates on select Samsung devices. Please visit ["<u><b>www.linuxondex.com</b></u>"] for the full list of compatible Samsung devices.
+ "</string>
+    <string name="samsungaccount_description2">" To operate properly, packages (apps and programs) must be built for ARM 64-bit and must comply with Android security policy
+ ("<b>https://source.android.com/security/selinux/</b>").
+
+If you have already consented to the collection of diagnostic and usage data, Linux on DeX will accordingly collect such data to improve the quality and performance of the services. You can disable this in your device Settings [Settings>General management>Report diagnostic info to Samsung].
+
+Linux on DeX may slow down or suddenly be turned off in case of lack of memory. At least 15GB ROM and 4GB RAM is required in your device for downloading a Linux image. Additional storage may be required when installing additional packages (apps and programs).
+
+LINUX ON DEX IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SAMSUNG BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY DAMAGE TO COMPUTER SYSTEMS, HARDWARE OR SOFTWARE, LOSS OF DATA, OR ANY OTHER PERFORMANCE FAILURES, ANY ERRORS, BUGS, VIRUSES OR OTHER DEFECTS ARISING FROM, OUT OF OR IN CONNECTION WITH THE LINUX ON DEX OR THE USE OR OTHER DEALINGS THEREOF.
+ "</string>
+    <string name="samsungaccount_notice">Notice</string>
+    <string name="samsungaccount_subtitle">Sign in to your Samsung account and get ready to enjoy the Linux on DeX experience.</string>
+    <string name="samsungaccount_subtitle_confirm">A Samsung account lets you enjoy the Linux on DeX experience.</string>
+    <string name="samsungaccount_title">Sign in to your Samsung account</string>
+    <string name="samsungaccount_viewless"><u>VIEW LESS</u></string>
+    <string name="samsungaccount_viewmore"><u>VIEW MORE</u></string>
+    <string name="save">SAVE</string>
+    <string name="save_changes_pupup_message">Save your changes, or they will not take effect.</string>
+    <string name="save_changes_pupup_title">Save changes</string>
+    <string name="sd_card">SD card</string>
+    <string name="sd_card_capital">SD CARD</string>
+    <string name="search_menu_title">Search</string>
+    <string name="see_image_details">SEE IMAGE DETAILS</string>
+    <string name="select_an_image_title">IMAGE FILE</string>
+    <string name="select_image_toolbar_title">LoD CONTAINER</string>
+    <string name="server_link_button">DOWNLOAD IMAGE</string>
+    <string name="set_image_size">Image size</string>
+    <string name="settings">Settings</string>
+    <string name="settings_capital">SETTINGS</string>
+    <string name="settings_toolbar_title">Linux on DeX Settings</string>
+    <string name="share_folder_disabled">OFF</string>
+    <string name="share_folder_enabled">ON</string>
+    <string name="share_folder_information">Share files with the Android file system on your device. LoD_Share folder will be created.</string>
+    <string name="share_folder_title">SHARE FOLDER</string>
+    <string name="shortcut_control_and_function_keys">Control and Function Keys</string>
+    <string name="shortcut_control_keys">"KEY_NAME Space : Control-@ (NUL)
+KEY_NAME A..Z : Control-A..Z
+KEY_NAME 5 : Control-]
+KEY_NAME 6 : Control-^
+KEY_NAME 7 : Control-_
+KEY_NAME 9 : F11
+KEY_NAME 0 : F12"</string>
+    <string name="shortcut_function_keys">"KEY_NAME 1..9 : F1-F9
+KEY_NAME 0 : F10
+KEY_NAME W : Up
+KEY_NAME A : Left
+KEY_NAME S : Down
+KEY_NAME D : Right
+KEY_NAME P : PageUp
+KEY_NAME N : PageDown
+KEY_NAME T : Tab
+KEY_NAME L : | (pipe)
+KEY_NAME U : _ (underscore)
+KEY_NAME E : Control-[ (ESC)
+KEY_NAME X : Delete
+KEY_NAME I : Insert
+KEY_NAME H : Home
+KEY_NAME F : End
+KEY_NAME . : Control-\\
+"</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="size">Size</string>
+    <string name="size_empty">Your LoD container needs a size</string>
+    <string name="splash_desc1">"Click on the   and choose an image by browsing it from your device or download one from our server."</string>
+    <string name="splash_desc2">Now that your image is mounted you can start setting up your container. Choose how big the Linux roots can grow.</string>
+    <string name="splash_desc3">Connect your phone to an external display see the full GUI of your containers or simply work on the go on terminal mode directly from your phone.</string>
+    <string name="splash_desc4">Give your LoD container a name and decide whether to share folders with the Android system on your device.</string>
+    <string name="splash_desc5">Choose when to run, edit, or delete your LoD container.</string>
+    <string name="splash_desc6">Avoid frustrating shutdown results and slow down with Linux on DeX.</string>
+    <string name="splash_next">NEXT</string>
+    <string name="splash_prev">PREVIOUS</string>
+    <string name="splash_skip">SKIP</string>
+    <string name="splash_start">START</string>
+    <string name="splash_title1">Create LoD containers</string>
+    <string name="splash_title2">Set up a container</string>
+    <string name="splash_title3">"Multitask like you've never before"</string>
+    <string name="splash_title4">Configure your LoD containers</string>
+    <string name="splash_title5">Manage your LoD containers</string>
+    <string name="splash_title6">App shutdown and RAM savings</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="storage_expansion_button">STOP EXPANDING</string>
+    <string name="storage_expansion_message">Expanding to</string>
+    <string name="storage_expansion_title">Storage expansion</string>
+    <string name="storage_space">Storage space</string>
+    <string name="storage_space_title">STORAGE SPACE</string>
+    <string name="terminal_mode">Terminal mode</string>
+    <string name="terminal_mode_text_copy">Copy</string>
+    <string name="terminal_mode_text_paste">Paste</string>
+    <string name="terms_and_conditions"><u>Terms and conditions</u></string>
+    <string name="tooltip_create_a_lod_container">Create a LoD container</string>
+    <string name="tooltip_delete_lod_container">Delete LoD container</string>
+    <string name="tooltip_edit_lod_container">Edit LoD container</string>
+    <string name="tooltip_more_options">More options</string>
+    <string name="tooltip_run_terminal_mode">Run terminal mode</string>
+    <string name="tooltip_search">Search</string>
+    <string name="tooltip_view_grid">Grid</string>
+    <string name="tooltip_view_list">List</string>
+    <string name="try_again">"Something went wrong.
+
+Please close Linux on DeX and try again."</string>
+    <string name="try_again_create">"Something went wrong and a LoD container could not be created.
+
+Please close Linux on DeX and try again."</string>
+    <string name="undock_cli_notice_msg">Linux on DeX has paused. Simply open the app to resume.</string>
+    <string name="undock_gui_notice_msg">"Linux on DeX has paused. Connect to an external display to resume.
+
+If you close the app, your unsaved data will be lost."</string>
+    <string name="undock_phone_notice_msg_popup">"Connect to an external display to resume app.
+If you close the app, your unsaved data will be lost."</string>
+    <string name="unexpected_error">Unexpected error</string>
+    <string name="uninstall_menu">Uninstall</string>
+    <string name="unmount_button">UNMOUNT</string>
+    <string name="unmount_image">UNMOUNT IMAGE</string>
+    <string name="unmount_image_popup_message">This Linux image will be unmounted and you will be able to upload a new image.</string>
+    <string name="unmount_image_popup_title">Unmount Image</string>
+    <string name="unzip_button">UNZIP</string>
+    <string name="update">UPDATE</string>
+    <string name="update_application_body">The current version of Linux on DeX is invalid. Please update the app and try again.</string>
+    <string name="update_application_title">Update application</string>
+    <string name="update_your_software_body">Linux on DeX requires your device to have the latest software to support some features.</string>
+    <string name="update_your_software_title">Update your software</string>
+    <string name="version">Version</string>
+    <string name="virtual_key_ctrl">Ctrl</string>
+    <string name="virtual_key_down">↓</string>
+    <string name="virtual_key_esc">Esc</string>
+    <string name="virtual_key_fn">Fn</string>
+    <string name="virtual_key_left">←</string>
+    <string name="virtual_key_right">→</string>
+    <string name="virtual_key_tab">Tab</string>
+    <string name="virtual_key_up">↑</string>
+    <string name="visit_our_server">Visit our server and download one of our recommended images.</string>
+    <string name="wait">Please wait...</string>
+    <string name="wifi_only_checkbox_message">Download using Wi-Fi only</string>
+    <string name="yes">YES</string>
+</resources>

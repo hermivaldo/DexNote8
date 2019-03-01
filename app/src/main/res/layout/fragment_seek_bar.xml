@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/itemDescriptionText" android:layout_marginTop="15.0dip" style="@style/Activity.Text.ItemTitle.Description" />
+    <TextView android:textColor="@color/LightTheme.primary" android:gravity="center" android:id="@id/itemValueText" android:focusable="true" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="28.0dip" android:layout_below="@id/itemDescriptionText" android:layout_alignParentStart="true" style="@style/Activity.Text.ItemTitle.EditOnly" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:layout_below="@id/itemValueText">
+        <TextView android:id="@id/minItemValueText" android:layout_weight="0.0" style="@style/Activity.Text.ItemTitle.EditOnly" />
+        <SeekBar android:id="@id/itemSeekBar" style="@style/Activity.SeekBar" />
+        <SeekBar android:id="@id/itemSeekBarDimmed" android:visibility="gone" style="@style/Activity.SeekBar.Dimmed" />
+        <TextView android:id="@id/maxItemValueText" android:layout_weight="0.0" style="@style/Activity.Text.ItemTitle.EditOnly" />
+    </LinearLayout>
+</RelativeLayout>

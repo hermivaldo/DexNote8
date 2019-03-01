@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/signIn_body" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/content_weight">
+        <View android:id="@id/below_button_sign_in_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/signIn_button" android:background="@drawable/custom_text_ripple" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/below_button_sign_in_margin" android:layout_alignParentEnd="true">
+            <TextView android:gravity="center" android:id="@id/signIn_button_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/samsungaccount_button" style="@style/Activity.Button.SignInButton" />
+            <View android:id="@id/empty_view_sig_in" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <ImageView android:gravity="center" android:id="@id/signIn_button_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_black_enable" />
+        </LinearLayout>
+        <View android:id="@id/below_checkbox_sign_in_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/signIn_button" />
+        <CheckBox android:gravity="center_vertical" android:id="@id/checkBoxSA" android:layout_height="wrap_content" android:checked="false" android:text="@string/samsungaccount_agree" android:layout_above="@id/below_checkbox_sign_in_margin" android:paddingStart="10.0dip" style="@style/Activity.CheckBoxLegal" />
+        <View android:id="@id/below_checkboxDivider_sign_in_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/checkBoxSA" />
+        <View android:id="@id/checkboxDivider_sign_in" android:background="@color/LightTheme.divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/below_checkboxDivider_sign_in_margin" />
+        <View android:id="@id/below_contents_sign_in_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/checkboxDivider_sign_in" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/below_contents_sign_in_margin">
+            <View android:id="@id/top_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:gravity="left" android:id="@id/signin_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/samsungaccount_title" style="@style/Activity.Text.SigninTitle" />
+            <View android:id="@id/below_title_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:id="@id/signin_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/samsungaccount_subtitle" style="@style/Activity.Text.SigninDesc" />
+            <View android:id="@id/below_signin_subtitle_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textStyle="bold" android:id="@id/email_signin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Activity.Text.SigninDesc" />
+            <View android:id="@id/below_email_signin_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:id="@id/noticeDivider" android:background="@color/LightTheme.divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <ScrollView android:scrollbarStyle="outsideInset" android:id="@id/notice_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:id="@id/below_noticDevider_signin_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <TextView android:id="@id/signing_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/samsungaccount_notice" style="@style/Activity.Text.SigninNotice" />
+                    <View android:id="@id/below_signing_notice_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <TextView android:textColorLink="@color/LightTheme.title_text" android:id="@id/signing_context1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/samsungaccount_description1" style="@style/Activity.Text.SigninContext" />
+                    <TextView android:layout_gravity="left" android:id="@id/signing_viewmore" android:clickable="true" android:text="@string/samsungaccount_viewmore" style="@style/Activity.Button.TextToggleButton.ViewMore" />
+                    <TextView android:textColorLink="@color/LightTheme.title_text" android:id="@id/signing_context2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/samsungaccount_description2" style="@style/Activity.Text.SigninContext" />
+                    <View android:id="@id/below_signing_context_margin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_weight="@dimen/margin_weight" style="@style/EmptyFrameLayout" />
+</LinearLayout>

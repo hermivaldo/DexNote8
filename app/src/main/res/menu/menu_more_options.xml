@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_tw_ic_ab_more_mtrl" android:id="@id/more_options" android:title="@string/tooltip_more_options" android:showAsAction="always">
+        <menu>
+            <item android:id="@id/settings" android:visible="false" android:title="@string/settings" />
+            <item android:id="@id/contact_us" android:visible="false" android:title="@string/contact_us_menu" />
+            <item android:id="@id/error_report" android:visible="false" android:title="@string/error_report" />
+            <item android:id="@id/shortcuts" android:visible="false" android:title="@string/shortcuts" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.samsung.android.lxd.fragment.CardViewFragment" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cardView">
+        <fragment android:id="@id/imageList" android:layout_width="wrap_content" android:layout_height="fill_parent" class="com.samsung.android.lxd.fragment.ImageListFragment" />
+        <View android:id="@id/vertical_line" android:background="#ffe6e6e6" android:layout_width="@dimen/line_height" android:layout_height="fill_parent" android:alpha="1.0" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/details" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

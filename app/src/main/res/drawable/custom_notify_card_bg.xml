@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="210.0dip" android:width="360.0dip" android:viewportWidth="360.0" android:viewportHeight="210.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffec701b" android:pathData="M0,0h360v210h-360z" />
+    <path android:fillColor="#ffed761a" android:pathData="M34.3,0l311.8,210l13.9,0l0,-210z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="#ffec701b" android:pathData="M0,0l0,210l360,0l0,-129.5l-119.6,-80.5z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="#ffe96520" android:pathData="M0,0l0,210l360,0l0,-62l-219.8,-148z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="#ffe45c23" android:pathData="M0,0l0,210l360,0l0,-17.1l-286.4,-192.9z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="@drawable/custom_notify_card_bg__0" android:pathData="M33.2,0l-33.2,0l0,210l353.4,0z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="@drawable/custom_notify_card_bg__1" android:pathData="M186.5,210l-186.5,-125.6l0,125.6z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="#ffec701b" android:pathData="M121.1,210l-121.1,-81.6l0,81.6z" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+</vector>

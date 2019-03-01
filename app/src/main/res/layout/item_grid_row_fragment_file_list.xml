@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/grid_item" android:background="@drawable/custom_list_item_grid_border" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_file" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/text_layout" android:background="@drawable/custom_list_item_grid_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="1.0px">
+        <TextView android:id="@id/name_text" android:layout_width="wrap_content" android:layout_marginHorizontal="5.0dip" style="@style/Activity.List.Item.Grid" />
+        <TextView android:id="@id/path_text" android:visibility="gone" style="@style/Activity.List.Item.Description" />
+        <TextView android:id="@id/size_text" android:visibility="gone" style="@style/Activity.List.Item.Description" />
+        <TextView android:id="@id/date_text" android:visibility="gone" style="@style/Activity.List.Item.Description" />
+    </LinearLayout>
+</LinearLayout>

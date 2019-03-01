@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Toolbar android:id="@id/bottomToolbar" android:background="@color/LightTheme.commit_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:enabled="false" android:id="@id/commitButton" android:layout_width="fill_parent" style="@style/Activity.Button.TextButton.BorderlessTextButton" />
+</RelativeLayout>
